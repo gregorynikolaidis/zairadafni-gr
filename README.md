@@ -37,7 +37,7 @@ The Python equivalents are `python3 scripts/check.py` and `python3 scripts/build
 | `site/js/` | Original browser scripts and slideshow |
 | `docs/import-manifest.json` | Source URLs, capture time, transformations, file hashes, and unavailable source assets |
 
-This is an editable baseline of the published site, not a redesign or a copy of its hosting backend. It keeps the original 971px minimum width and older jQuery/Bootstrap/Fancybox code. Mobile therefore keeps the original desktop-width layout. The original heading's tight line spacing is also preserved.
+This is an editable baseline of the published site, not a redesign or a copy of its hosting backend. The original desktop layout and older jQuery/Bootstrap/Fancybox code are preserved. Below 1024px, `site/css/responsive.css` switches to a fluid layout with readable text, grouped course cards, scaled images and maps, and a collapsible Greek navigation menu. `site/js/responsive.js` controls the menu; links stay visible when JavaScript is unavailable. Both homepage URLs share the same markup.
 
 Google Analytics and StatCounter are removed so local work does not send visits to the live site's analytics. Public email links are decoded to ordinary `mailto:` links. Open Sans is stored locally; unused builder font declarations and CSS images that already return 404 on the source are removed. The legacy key-dependent Google Maps script is replaced with a Google Maps embed at the original coordinates; the map still requires an internet connection. There is no contact form backend to recreate.
 
