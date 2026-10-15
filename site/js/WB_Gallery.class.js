@@ -66,45 +66,67 @@ WB_Gallery.prototype.renderThumbs = function() {
 };
 
 WB_Gallery.prototype.renderSlideshow = function() {
-	var thisClass = this;
-	this.displayedImage = null;
-	this.loadingImage = null;
-	var cont = $(
-		'<div class="gallery-slideshow">'+
-			'<div class="gallery-slide-image" style="overflow: hidden;"></div>'+
-			'<button type="button" class="gallery-slide-left" aria-label="Προηγούμενη φωτογραφία"></button>'+
-			'<button type="button" class="gallery-slide-right" aria-label="Επόμενη φωτογραφία"></button>'+
-		'</div>'
-	);
+	var gallery = this;
+	var cont = $('<div class="gallery-slideshow" role="region" aria-roledescription="carousel" aria-label="Φωτογραφίες του χώρου"></div>');
+	var track = $('<div class="gallery-track"></div>').appendTo(cont);
+	var dots = $('<div class="gallery-dots" role="group" aria-label="Επιλογή φωτογραφίας"></div>').appendTo(cont);
+	var previous = $('<button type="button" class="gallery-slide-left" aria-label="Προηγούμενη φωτογραφία"></button>').appendTo(cont);
+	var next = $('<button type="button" class="gallery-slide-right" aria-label="Επόμενη φωτογραφία"></button>').appendTo(cont);
+	var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+	var buttons = [];
+	var pointerDown = false;
+	var count = this.images.length;
 	this.elem.html(cont);
-	this.listImgCont = cont.children("div").eq(0);
-	var larr = cont.children(".gallery-slide-left");
-	var rarr = cont.children(".gallery-slide-right");
-	larr.css({left: "0", top: Math.floor((cont.innerHeight() - larr.height()) / 2) + "px"});
-	rarr.css({right: "0", top: Math.floor((cont.innerHeight() - larr.height()) / 2) + "px"});
+	this.imageIndex = 0;
 
-	larr.click(function() {
-		thisClass.slideshowPrev();
+	function schedule() {
+		clearTimeout(gallery.slideshowTimer);
+		if (count < 2 || pointerDown || document.hidden || reducedMotion.matches || cont[0].contains(document.activeElement)) return;
+		gallery.slideshowTimer = setTimeout(function() {
+			goTo(gallery.imageIndex + 1);
+		}, gallery.slideshowInterval * 1000);
+	}
+
+	function update() {
+		var width = track[0].clientWidth;
+		if (!width || !count) return;
+		gallery.imageIndex = Math.max(0, Math.min(count - 1, Math.round(track[0].scrollLeft / width)));
+		buttons.forEach(function(button, index) {
+			button.attr('aria-current', index === gallery.imageIndex ? 'true' : 'false');
+		});
+	}
+
+	function goTo(index) {
+		if (!count) return;
+		index = (index + count) % count;
+		track[0].scrollTo({left: index * track[0].clientWidth, behavior: reducedMotion.matches ? 'auto' : 'smooth'});
+		schedule();
+	}
+
+	this.images.forEach(function(image, index) {
+		var label = 'Φωτογραφία ' + (index + 1) + ' από ' + count;
+		var slide = $('<div class="gallery-slide" role="group" aria-roledescription="slide"></div>').attr('aria-label', label).appendTo(track);
+		var img = $('<img draggable="false">').attr({src: image.image, alt: label}).appendTo(slide);
+		img.fancybox({href: image.image, hideOnContentClick: true});
+		var button = $('<button type="button" class="gallery-dot"></button>').attr('aria-label', label).appendTo(dots);
+		button.on('click', function() { goTo(index); });
+		buttons.push(button);
 	});
 
-	rarr.click(function() {
-		thisClass.slideshowNext();
-	});
-
+	previous.on('click', function() { goTo(gallery.imageIndex - 1); });
+	next.on('click', function() { goTo(gallery.imageIndex + 1); });
+	track.on('scroll', function() { update(); schedule(); });
+	track.on('pointerdown', function() { pointerDown = true; clearTimeout(gallery.slideshowTimer); });
+	$(window).on('pointerup pointercancel', function() { pointerDown = false; schedule(); });
+	cont.on('focusin', function() { clearTimeout(gallery.slideshowTimer); });
+	cont.on('focusout', function() { setTimeout(schedule, 0); });
+	$(document).on('visibilitychange', schedule);
 	$(window).on('resize', function() {
-		var w = thisClass.elem.width(), h = thisClass.elem.height();
-		if (w !== thisClass.width || h !== thisClass.height) {
-			thisClass.width = w;
-			thisClass.height = h;
-			thisClass.displayImage(thisClass.listImgCont);
-		}
+		track[0].scrollTo({left: gallery.imageIndex * track[0].clientWidth, behavior: 'instant'});
 	});
-
-	this.slideshowTimer = setTimeout(function() {
-		thisClass.slideshowNext();
-	}, this.slideshowInterval * 1000);
-	this.imageIndex = -1;
-	this.slideshowNext();
+	reducedMotion.addEventListener('change', schedule);
+	update();
+	schedule();
 };
 
 WB_Gallery.prototype.renderList = function() {
