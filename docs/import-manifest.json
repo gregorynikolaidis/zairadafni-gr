@@ -1,0 +1,554 @@
+{
+  "source": "https://www.zairadafni.gr/",
+  "captured_at": "2026-10-15T16:34:34Z",
+  "unavailable_on_source": [
+    "https://www.zairadafni.gr/a",
+    "https://www.zairadafni.gr/img/hlight_bg.png",
+    "https://www.zairadafni.gr/img/icon-logo.png",
+    "https://www.zairadafni.gr/img/flags_matrix.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_close.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_nav_left.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_nav_right.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_title_over.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_title_left.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_title_main.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_title_right.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_loading.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_shadow_n.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_shadow_ne.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_shadow_e.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_shadow_se.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_shadow_s.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_shadow_sw.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_shadow_w.png",
+    "https://www.zairadafni.gr/js/fancybox/fancybox/fancy_shadow_nw.png",
+    "https://www.zairadafni.gr/css/gallery/vintage_footer.jpg"
+  ],
+  "transformations": [
+    "local base URL",
+    "remove analytics and obsolete IE shim",
+    "decode public email links",
+    "Greek document language",
+    "remove invalid CSS null image placeholders",
+    "local Open Sans fonts; drop unused font declarations",
+    "replace legacy Maps API script with keyless embed at same coordinates"
+  ],
+  "files": {
+    "BusinessEnglish/index.html": {
+      "url": "https://www.zairadafni.gr/BusinessEnglish/",
+      "content_type": "text/html",
+      "bytes": 8712,
+      "sha256": "782212bd08ceef5dbb347dfa48c3e7d850260769a1162d528a0063791ef1102b"
+    },
+    "JuniorAB/index.html": {
+      "url": "https://www.zairadafni.gr/JuniorAB/",
+      "content_type": "text/html",
+      "bytes": 8393,
+      "sha256": "c720e37028faa987dd977391859988516c5b48bac9fcad20ca320984d856160a"
+    },
+    "css/1.css": {
+      "url": "https://www.zairadafni.gr/css/1.css",
+      "content_type": "text/css",
+      "bytes": 24548,
+      "sha256": "e962ac83e3abceab32263cb208ac574270edbececc1cd48a8643f7a9f8370249"
+    },
+    "css/10.css": {
+      "url": "https://www.zairadafni.gr/css/10.css",
+      "content_type": "text/css",
+      "bytes": 5752,
+      "sha256": "8c60bb2ca3e547d224f5c037a8f3811dca3e2e372430e3ed350da893c5ed1584"
+    },
+    "css/11.css": {
+      "url": "https://www.zairadafni.gr/css/11.css",
+      "content_type": "text/css",
+      "bytes": 6155,
+      "sha256": "709e6db5ba4ba6736c95f716200090d6fe6aceb0f78359f36fac1d89db93a8d4"
+    },
+    "css/2.css": {
+      "url": "https://www.zairadafni.gr/css/2.css",
+      "content_type": "text/css",
+      "bytes": 5670,
+      "sha256": "1bbd758e1f781d1abe6c96b9e7083fb7eef56f267ab9aaa111a5ca5b034f8f3c"
+    },
+    "css/3.css": {
+      "url": "https://www.zairadafni.gr/css/3.css",
+      "content_type": "text/css",
+      "bytes": 4747,
+      "sha256": "62508cd6648aadb1d505713c230ad81e2d38dbc769211c2d2b4ae8373215b937"
+    },
+    "css/4.css": {
+      "url": "https://www.zairadafni.gr/css/4.css",
+      "content_type": "text/css",
+      "bytes": 9219,
+      "sha256": "ca0fa5eb71b6d96cb75a7c5e1edf46742d982c4dd6ea625a140850044b87ced2"
+    },
+    "css/5.css": {
+      "url": "https://www.zairadafni.gr/css/5.css",
+      "content_type": "text/css",
+      "bytes": 9203,
+      "sha256": "91b73a67567711063a672f1e2f9cbe67f0c060e0f9de561b2b350118315dc2fb"
+    },
+    "css/6.css": {
+      "url": "https://www.zairadafni.gr/css/6.css",
+      "content_type": "text/css",
+      "bytes": 9231,
+      "sha256": "e81c9807f76d88f1ff301545e8d41fc0850239ed248b0400a463bd86bfff072a"
+    },
+    "css/7.css": {
+      "url": "https://www.zairadafni.gr/css/7.css",
+      "content_type": "text/css",
+      "bytes": 5646,
+      "sha256": "fbdb27a1d6936290ffdac7c588f685eda9cea1a5bdf399012d5f2685bc713c6c"
+    },
+    "css/8.css": {
+      "url": "https://www.zairadafni.gr/css/8.css",
+      "content_type": "text/css",
+      "bytes": 9261,
+      "sha256": "78dbfd9986efa77ee533acf0496e807f84798af48857efe826a0e6e250ba734d"
+    },
+    "css/9.css": {
+      "url": "https://www.zairadafni.gr/css/9.css",
+      "content_type": "text/css",
+      "bytes": 9290,
+      "sha256": "80384dedbcf18b3ff17a5bb53e105a14c1a7d0172e883a7f1a344b7d72a3967f"
+    },
+    "css/bootstrap.min.css": {
+      "url": "https://www.zairadafni.gr/css/bootstrap.min.css",
+      "content_type": "text/css",
+      "bytes": 122155,
+      "sha256": "87a14ba01ebdf4b9d3b4fed187910e139b1adf70498299abbef8d0475c632f88"
+    },
+    "css/common.css": {
+      "url": "https://www.zairadafni.gr/css/common.css",
+      "content_type": "text/css",
+      "bytes": 23954,
+      "sha256": "93136d528b32cda5534b635add1e035742b7bed5eeed43e752138a266b4f4ada"
+    },
+    "css/site.css": {
+      "url": "https://www.zairadafni.gr/css/site.css",
+      "content_type": "text/css",
+      "bytes": 22190,
+      "sha256": "dd292a736e89aae21de0bdd2c18a99a5a3d82bfebb8187d7625b0440e9bc0029"
+    },
+    "fonts/DXI1ORHCpsQm3Vp6mXoaTYraN7vELC11_xip9Rz-hMs.woff": {
+      "url": "https://www.zairadafni.gr/fonts/DXI1ORHCpsQm3Vp6mXoaTYraN7vELC11_xip9Rz-hMs.woff",
+      "content_type": "font/woff",
+      "bytes": 30360,
+      "sha256": "681dcc0fcff46d13c34263eb61e79801da96718e43dd6087fe2b0dd967357fe8"
+    },
+    "fonts/EInbV5DfGHOiMmvb1Xr-horaN7vELC11_xip9Rz-hMs.woff": {
+      "url": "https://www.zairadafni.gr/fonts/EInbV5DfGHOiMmvb1Xr-horaN7vELC11_xip9Rz-hMs.woff",
+      "content_type": "font/woff",
+      "bytes": 30732,
+      "sha256": "4b66ca0b94bbb41edda61eadaddfb2952a262dd89eca3de56d9128a1dff5fdf5"
+    },
+    "fonts/MTP_ySUJH_bn48VBG8sNSoraN7vELC11_xip9Rz-hMs.woff": {
+      "url": "https://www.zairadafni.gr/fonts/MTP_ySUJH_bn48VBG8sNSoraN7vELC11_xip9Rz-hMs.woff",
+      "content_type": "font/woff",
+      "bytes": 30428,
+      "sha256": "eddd4127b82ca23ab47e594ad7ff03c34ad5bd0c6a344d427d4205e762aed334"
+    },
+    "fonts/PRmiXeptR36kaC0GEAetxl1DIE4XHZKVVbKkAUmpPQQ.woff": {
+      "url": "https://www.zairadafni.gr/fonts/PRmiXeptR36kaC0GEAetxl1DIE4XHZKVVbKkAUmpPQQ.woff",
+      "content_type": "font/woff",
+      "bytes": 29164,
+      "sha256": "c4115a9186735c36a6cdeae9f189210354861bc2cd97a8c0b01cc6d59340dc0a"
+    },
+    "fonts/PRmiXeptR36kaC0GEAetxlRROVH9Vvc8xHnAGvvgPQc.woff": {
+      "url": "https://www.zairadafni.gr/fonts/PRmiXeptR36kaC0GEAetxlRROVH9Vvc8xHnAGvvgPQc.woff",
+      "content_type": "font/woff",
+      "bytes": 28932,
+      "sha256": "ff1132ce7f0fab767bfe97df434b32f93e01d13566f05e96d7e67563ea797089"
+    },
+    "fonts/PRmiXeptR36kaC0GEAetxq6JHp92iES8exGTOIyTn1A.woff": {
+      "url": "https://www.zairadafni.gr/fonts/PRmiXeptR36kaC0GEAetxq6JHp92iES8exGTOIyTn1A.woff",
+      "content_type": "font/woff",
+      "bytes": 29244,
+      "sha256": "08c2fc215833b7c32d20b9c572c6ef161bca6a17939721c2855d1dd4acf614aa"
+    },
+    "fonts/PRmiXeptR36kaC0GEAetxsm6z33g0Z9rhmCMv9JmtIA.woff": {
+      "url": "https://www.zairadafni.gr/fonts/PRmiXeptR36kaC0GEAetxsm6z33g0Z9rhmCMv9JmtIA.woff",
+      "content_type": "font/woff",
+      "bytes": 29064,
+      "sha256": "efbb2afa1049c7a00ed90fb13c76b0da27b579f8a875b34d10344e09dca25cfa"
+    },
+    "fonts/RjgO7rYTmqiVp7vzi-Q5UT8E0i7KZn-EPnyo3HZu7kw.woff": {
+      "url": "https://www.zairadafni.gr/fonts/RjgO7rYTmqiVp7vzi-Q5UT8E0i7KZn-EPnyo3HZu7kw.woff",
+      "content_type": "font/woff",
+      "bytes": 29680,
+      "sha256": "29cae7cd39e3675acd183aea7e129ff6264585f2b900821552a1152c7c5aef6c"
+    },
+    "fonts/glyphicons-halflings-regular.eot": {
+      "url": "https://www.zairadafni.gr/fonts/glyphicons-halflings-regular.eot",
+      "content_type": "application/vnd.ms-fontobject",
+      "bytes": 20127,
+      "sha256": "13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407"
+    },
+    "fonts/glyphicons-halflings-regular.svg": {
+      "url": "https://www.zairadafni.gr/fonts/glyphicons-halflings-regular.svg",
+      "content_type": "image/svg+xml",
+      "bytes": 108738,
+      "sha256": "42f60659d265c1a3c30f9fa42abcbb56bd4a53af4d83d316d6dd7a36903c43e5"
+    },
+    "fonts/glyphicons-halflings-regular.ttf": {
+      "url": "https://www.zairadafni.gr/fonts/glyphicons-halflings-regular.ttf",
+      "content_type": "font/ttf",
+      "bytes": 45404,
+      "sha256": "e395044093757d82afcb138957d06a1ea9361bdcf0b442d06a18a8051af57456"
+    },
+    "fonts/glyphicons-halflings-regular.woff": {
+      "url": "https://www.zairadafni.gr/fonts/glyphicons-halflings-regular.woff",
+      "content_type": "font/woff",
+      "bytes": 23424,
+      "sha256": "a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742"
+    },
+    "fonts/glyphicons-halflings-regular.woff2": {
+      "url": "https://www.zairadafni.gr/fonts/glyphicons-halflings-regular.woff2",
+      "content_type": "font/woff2",
+      "bytes": 18028,
+      "sha256": "fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c"
+    },
+    "fonts/k3k702ZOKiLJc3WVjuplzIraN7vELC11_xip9Rz-hMs.woff": {
+      "url": "https://www.zairadafni.gr/fonts/k3k702ZOKiLJc3WVjuplzIraN7vELC11_xip9Rz-hMs.woff",
+      "content_type": "font/woff",
+      "bytes": 30524,
+      "sha256": "8e4468e54d09332e657031b0681fa01592f25a7980c01cfa0fa1b1dc3c715353"
+    },
+    "fonts/xjAJXh38I15wypJXxuGMBmOb2gHztoQeulij-1lvl-8.woff": {
+      "url": "https://www.zairadafni.gr/fonts/xjAJXh38I15wypJXxuGMBmOb2gHztoQeulij-1lvl-8.woff",
+      "content_type": "font/woff",
+      "bytes": 28808,
+      "sha256": "5d91b43afc6407a1fd08d4d6b8538fa97c04ef9bcf401f09efced79ff0a3ed0d"
+    },
+    "gallery_gen/02d6316a02de85dec39bbfeab2a4cf5f_216x172.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/02d6316a02de85dec39bbfeab2a4cf5f_216x172.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 31301,
+      "sha256": "d363bc41e950b47b680e1d1b4f833b21b6527dce27be6464b20f0971e17d0e3c"
+    },
+    "gallery_gen/1875dfe7236ac33a44722a11742d4966_gallery.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/1875dfe7236ac33a44722a11742d4966_gallery.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 1401112,
+      "sha256": "a081e20ea8f779f0ed84750c20c23cd3b0bddf14ee34da92b710ab34484dbcda"
+    },
+    "gallery_gen/1875dfe7236ac33a44722a11742d4966_gallery.jpg.thumb.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/1875dfe7236ac33a44722a11742d4966_gallery.jpg.thumb.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 5079,
+      "sha256": "34aa64a67b51b46628e205ad47398f6aaabc73caaf12b513f3bfd261f0a5d993"
+    },
+    "gallery_gen/5fbe274bd57ae3c68a0dcbfeb5cd073b_500x370.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/5fbe274bd57ae3c68a0dcbfeb5cd073b_500x370.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 83395,
+      "sha256": "4dd522af79e21b7ef66d92c183ca055c34e389e73ea5bd0d1ef5bf31a2ba0f09"
+    },
+    "gallery_gen/6a99fe4cde7616141a9fabc61eaf2c90_gallery.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/6a99fe4cde7616141a9fabc61eaf2c90_gallery.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 1339469,
+      "sha256": "5b48cba2937340a6dcf63b39cac2bbc1aa7131b54f904c58f67804c94e064a5c"
+    },
+    "gallery_gen/6a99fe4cde7616141a9fabc61eaf2c90_gallery.jpg.thumb.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/6a99fe4cde7616141a9fabc61eaf2c90_gallery.jpg.thumb.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 5275,
+      "sha256": "3c78df9fa11e0d8d33bddd3e84abae50501d7d91d10c6ac85e2d09afb4e0e870"
+    },
+    "gallery_gen/72aefbfd92084917b98bb2dc0b073363_gallery.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/72aefbfd92084917b98bb2dc0b073363_gallery.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 1412960,
+      "sha256": "71b245102c08e043041c83d06770c8c424bfad9b5d65b2ab5fc5242cae12e035"
+    },
+    "gallery_gen/72aefbfd92084917b98bb2dc0b073363_gallery.jpg.thumb.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/72aefbfd92084917b98bb2dc0b073363_gallery.jpg.thumb.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 5557,
+      "sha256": "7a5a8e049d6c91e6ab87008af4042c4f93791cfcc21d087a67ef458847d52967"
+    },
+    "gallery_gen/77544ad1acd7e51961e459458a2e813a_gallery.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/77544ad1acd7e51961e459458a2e813a_gallery.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 1355996,
+      "sha256": "86f8a9c4c64db5c11d1a5404eccdb7b5c094dfdb2b0f3acdcf5e3214c9d0af82"
+    },
+    "gallery_gen/77544ad1acd7e51961e459458a2e813a_gallery.jpg.thumb.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/77544ad1acd7e51961e459458a2e813a_gallery.jpg.thumb.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 5279,
+      "sha256": "de78a953981107bb91612f0aeca36747d496a8d4d7653073cb4e21fbb53a4988"
+    },
+    "gallery_gen/792c7d2aeeef19a5c12268bdc5a74f41_216x172.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/792c7d2aeeef19a5c12268bdc5a74f41_216x172.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 39061,
+      "sha256": "b5ec770bee7a689e81abca7976d61744dca52e5b291719b0bfd15e4d5e5d3eaa"
+    },
+    "gallery_gen/85c450477e6bc9d8c9a0e9deed2600e2_216x172.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/85c450477e6bc9d8c9a0e9deed2600e2_216x172.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 30783,
+      "sha256": "58c7e92c52211aa724978b93804dc84ec9c6d8ca3499b8ef2e3461a8040da5a3"
+    },
+    "gallery_gen/8aee7880bc4cebc1e969e3365b017d9d_gallery.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/8aee7880bc4cebc1e969e3365b017d9d_gallery.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 893733,
+      "sha256": "adf98c56f43e24cd6a75eabcb0d8472e28f5857ee21966d94216c37957faa43a"
+    },
+    "gallery_gen/8aee7880bc4cebc1e969e3365b017d9d_gallery.jpg.thumb.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/8aee7880bc4cebc1e969e3365b017d9d_gallery.jpg.thumb.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 3020,
+      "sha256": "e57a5a058ba6db1da77df0aef63811cb78f7d958dcfc6b04fbf44fd30eea864d"
+    },
+    "gallery_gen/8b98485c9a4285f39dcc910ce306425e_gallery.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/8b98485c9a4285f39dcc910ce306425e_gallery.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 1409879,
+      "sha256": "146b0575e8e708b7b685a31ac9dec94e8999a36100a1fc573cf9781e1dbc9aac"
+    },
+    "gallery_gen/8b98485c9a4285f39dcc910ce306425e_gallery.jpg.thumb.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/8b98485c9a4285f39dcc910ce306425e_gallery.jpg.thumb.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 4429,
+      "sha256": "1f68b1c10ff67c775767b53cd1165831e1b845b47f66404c8f5f4530b74f2232"
+    },
+    "gallery_gen/9e9f0d4f288d592f8c173182494fe306_216x172.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/9e9f0d4f288d592f8c173182494fe306_216x172.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 27590,
+      "sha256": "81a13e545b6b306cd2b383688d31088c52d05fc5c840587e36709bc44d541dc9"
+    },
+    "gallery_gen/b3db98c2bb51116847a16ace81fa9124_216x172.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/b3db98c2bb51116847a16ace81fa9124_216x172.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 32979,
+      "sha256": "52e9d1a523afd2c6e69fe91badddc68bc2b3fe6bdb1a5fabc7446608ca1b5361"
+    },
+    "gallery_gen/d0d7b5a373fa50551dbbdacf071574a2_gallery.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/d0d7b5a373fa50551dbbdacf071574a2_gallery.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 1041973,
+      "sha256": "283420f047a3588cf108be7b732a8f7e6e740445857b5bd2c683bf96f49a5c22"
+    },
+    "gallery_gen/d0d7b5a373fa50551dbbdacf071574a2_gallery.jpg.thumb.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/d0d7b5a373fa50551dbbdacf071574a2_gallery.jpg.thumb.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 4378,
+      "sha256": "f55ec92998124e4d313446a0625d4610b8bef5262a5ed1b8081eb66e64a51cf6"
+    },
+    "gallery_gen/db11a35aa5141ea819fc2ceb038f8c77_216x172.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/db11a35aa5141ea819fc2ceb038f8c77_216x172.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 26536,
+      "sha256": "e259d852716001dc55889c1c256a661e0b431157eb284fddfec09805e1007b9d"
+    },
+    "gallery_gen/de8be872f84e99dd5e58348755b249a9_gallery.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/de8be872f84e99dd5e58348755b249a9_gallery.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 1156617,
+      "sha256": "e284455d028863077566ba55a506f61a594897b0929d39a3f8428c4b92267de2"
+    },
+    "gallery_gen/de8be872f84e99dd5e58348755b249a9_gallery.jpg.thumb.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/de8be872f84e99dd5e58348755b249a9_gallery.jpg.thumb.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 4873,
+      "sha256": "fbc793e046dd96885548b4effb53c9371496e96890167b3e13dab756589bebab"
+    },
+    "gallery_gen/f0c836a8291112b5bd7e3072dc033b44_216x172.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/f0c836a8291112b5bd7e3072dc033b44_216x172.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 28554,
+      "sha256": "bbcf02c35af5d9e6e8b21d329750b58eb9303a7ada0e4fd51c862d03a5472983"
+    },
+    "gallery_gen/f48a57f601a95ec2794945fa77f86b27_216x172.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/f48a57f601a95ec2794945fa77f86b27_216x172.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 34496,
+      "sha256": "f9f3439831198bb9a910420099e026cd40085fbcfdeb9cbe0d033371d3042ae8"
+    },
+    "gallery_gen/f83ef65c321589b962858d3371de60fa_gallery.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/f83ef65c321589b962858d3371de60fa_gallery.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 1339452,
+      "sha256": "4a8ecfbd21e1d1f3b3c89dabbdaa03c3fd2db943f0c135149d0b52ff0aacce78"
+    },
+    "gallery_gen/f83ef65c321589b962858d3371de60fa_gallery.jpg.thumb.jpg": {
+      "url": "https://www.zairadafni.gr/gallery_gen/f83ef65c321589b962858d3371de60fa_gallery.jpg.thumb.jpg",
+      "content_type": "image/jpeg",
+      "bytes": 5123,
+      "sha256": "dfd23016545f3c3fbb16d9552bffedd6f2b1072edb337a5b58679acd99c7ab4a"
+    },
+    "gallery_gen/f8b8785a1c5acaac3c3f29223d068996_1002x358.png": {
+      "url": "https://www.zairadafni.gr/gallery_gen/f8b8785a1c5acaac3c3f29223d068996_1002x358.png",
+      "content_type": "image/png",
+      "bytes": 112681,
+      "sha256": "f3e69631c9580cdfc09f499e7d371ca09cae163a863cf62ea8d6d05e1993bc67"
+    },
+    "img/gallery.empty.gif": {
+      "url": "https://www.zairadafni.gr/img/gallery.empty.gif",
+      "content_type": "image/gif",
+      "bytes": 3174,
+      "sha256": "22a617f9767091af215f0cdcf99f4802e69bfcbae21513886228abed8db4d182"
+    },
+    "img/gallery.left.png": {
+      "url": "https://www.zairadafni.gr/img/gallery.left.png",
+      "content_type": "image/png",
+      "bytes": 998,
+      "sha256": "1ea58dc53e12b22819c24b2b11dbf0ba5b77973358bc660a605ac78c57aea800"
+    },
+    "img/gallery.left_h.png": {
+      "url": "https://www.zairadafni.gr/img/gallery.left_h.png",
+      "content_type": "image/png",
+      "bytes": 1009,
+      "sha256": "8d46a36541b269fe3caec16c795f9bec54c622e221acc655b9367d160d108e8c"
+    },
+    "img/gallery.right.png": {
+      "url": "https://www.zairadafni.gr/img/gallery.right.png",
+      "content_type": "image/png",
+      "bytes": 1005,
+      "sha256": "ef69962e31fd618fbbdf014e6c005a0c236963e782ad9b2be504ffdf1ac598d8"
+    },
+    "img/gallery.right_h.png": {
+      "url": "https://www.zairadafni.gr/img/gallery.right_h.png",
+      "content_type": "image/png",
+      "bytes": 1011,
+      "sha256": "2f631ad2f5d697363a295c58fc2f6756e069b424592540033abd5153ca9073ab"
+    },
+    "index.html": {
+      "url": "https://www.zairadafni.gr/",
+      "content_type": "text/html",
+      "bytes": 11744,
+      "sha256": "4543126acce2ca65915532b9ace3e576133bdd831ad411394ac4086a197af94f"
+    },
+    "js/WB_Gallery.class.js": {
+      "url": "https://www.zairadafni.gr/js/WB_Gallery.class.js",
+      "content_type": "text/javascript",
+      "bytes": 10663,
+      "sha256": "120afaf439b63428b04d369219f0f023ab87a79c8a2366cb4ec3bb8e16a7c4ae"
+    },
+    "js/bootstrap.min.js": {
+      "url": "https://www.zairadafni.gr/js/bootstrap.min.js",
+      "content_type": "text/javascript",
+      "bytes": 37107,
+      "sha256": "6611a18fe4ffa925cb7990e0da1733054357b80786e0622c65b8c445638011e2"
+    },
+    "js/fancybox/blank.gif": {
+      "url": "https://www.zairadafni.gr/js/fancybox/blank.gif",
+      "content_type": "image/gif",
+      "bytes": 43,
+      "sha256": "b1442e85b03bdcaf66dc58c7abb98745dd2687d86350be9a298a1d9382ac849b"
+    },
+    "js/fancybox/fancy_title_over.png": {
+      "url": "https://www.zairadafni.gr/js/fancybox/fancy_title_over.png",
+      "content_type": "image/png",
+      "bytes": 70,
+      "sha256": "d7d1b664875a020cd6577ddc7131018e2abaeafbf8a73a0afad7b1cb5ed3e4ff"
+    },
+    "js/fancybox/fancybox-x.png": {
+      "url": "https://www.zairadafni.gr/js/fancybox/fancybox-x.png",
+      "content_type": "image/png",
+      "bytes": 203,
+      "sha256": "2af34ef71e58658ae2358171b7508555cddd488dfb1bea735d0787a7ceaa4390"
+    },
+    "js/fancybox/fancybox-y.png": {
+      "url": "https://www.zairadafni.gr/js/fancybox/fancybox-y.png",
+      "content_type": "image/png",
+      "bytes": 176,
+      "sha256": "08e777880f53e0e527333f100692c9c57ab2d11bf7536a0070b523320f0835b2"
+    },
+    "js/fancybox/fancybox.png": {
+      "url": "https://www.zairadafni.gr/js/fancybox/fancybox.png",
+      "content_type": "image/png",
+      "bytes": 15287,
+      "sha256": "324b9d944e39c915922db7058a276bd708e68ea5d86762741f14864af2324607"
+    },
+    "js/fancybox/jquery.fancybox-1.3.4.css": {
+      "url": "https://www.zairadafni.gr/js/fancybox/jquery.fancybox-1.3.4.css",
+      "content_type": "text/css",
+      "bytes": 8494,
+      "sha256": "9aa3d7beea155d9cc9e89c108d05608bdecc6f1eae8cdff26343c11510e9517d"
+    },
+    "js/fancybox/jquery.fancybox-1.3.4.pack.js": {
+      "url": "https://www.zairadafni.gr/js/fancybox/jquery.fancybox-1.3.4.pack.js",
+      "content_type": "text/javascript",
+      "bytes": 15624,
+      "sha256": "d84bac3710c2842dc8d5d5ae6e324007443cbd8ae26b909dd89bc2bdc31c8561"
+    },
+    "js/jquery-1.11.3.min.js": {
+      "url": "https://www.zairadafni.gr/js/jquery-1.11.3.min.js",
+      "content_type": "text/javascript",
+      "bytes": 95957,
+      "sha256": "ecb916133a9376911f10bc5c659952eb0031e457f5df367cde560edbfba38fb8"
+    },
+    "js/jquery.browser.min.js": {
+      "url": "https://www.zairadafni.gr/js/jquery.browser.min.js",
+      "content_type": "text/javascript",
+      "bytes": 2595,
+      "sha256": "4752051d3d0c5a46e0bbabd7813e1113b4d24f844e2c36512ada5165e67f29ef"
+    },
+    "js/main.js": {
+      "url": "https://www.zairadafni.gr/js/main.js",
+      "content_type": "text/javascript",
+      "bytes": 4290,
+      "sha256": "c7a77061b318a1f9bf4014aa3193c5a8ecfb19ce6ad9d713372acdecf4798302"
+    },
+    "Ακαδημαϊκή-προετοιμασία/index.html": {
+      "url": "https://www.zairadafni.gr/Ακαδημαϊκή-προετοιμασία/",
+      "content_type": "text/html",
+      "bytes": 8237,
+      "sha256": "e4ad80d97a7bfdeb9331f4346cc5d15fab5f4caa52558a596cf8a83be568dcb2"
+    },
+    "Αρχική/index.html": {
+      "url": "https://www.zairadafni.gr/Αρχική/",
+      "content_type": "text/html",
+      "bytes": 11744,
+      "sha256": "4543126acce2ca65915532b9ace3e576133bdd831ad411394ac4086a197af94f"
+    },
+    "Βιογραφικό/index.html": {
+      "url": "https://www.zairadafni.gr/Βιογραφικό/",
+      "content_type": "text/html",
+      "bytes": 6145,
+      "sha256": "e11522b5a9f00f8b9ed4a54e5695ddcc1be7764ac4038f719d551ab10a308f8c"
+    },
+    "Εντατικά/index.html": {
+      "url": "https://www.zairadafni.gr/Εντατικά/",
+      "content_type": "text/html",
+      "bytes": 9721,
+      "sha256": "7772314ad7894dc53bf86954b92317a89652ff4bc91401f36259ddaf0d901547"
+    },
+    "Επικοινωνία/index.html": {
+      "url": "https://www.zairadafni.gr/Επικοινωνία/",
+      "content_type": "text/html",
+      "bytes": 5873,
+      "sha256": "55ebe5293b37b72052ac16b6568951cb593fa3e473dbb3101140295e1bfa13f3"
+    },
+    "Η-Φιλοσοφία-μας/index.html": {
+      "url": "https://www.zairadafni.gr/Η-Φιλοσοφία-μας/",
+      "content_type": "text/html",
+      "bytes": 7616,
+      "sha256": "17df8703b0492bb2196b8b59d817fd77a2e1175615b1afd2c7e3508a234920aa"
+    },
+    "Προσχολικά/index.html": {
+      "url": "https://www.zairadafni.gr/Προσχολικά/",
+      "content_type": "text/html",
+      "bytes": 7254,
+      "sha256": "6c795129cb5e6d2f89bf9daa5515ca2dc556330d6a9d0046198875571e23dc1f"
+    },
+    "Πτυχία-γλωσσομάθειας/index.html": {
+      "url": "https://www.zairadafni.gr/Πτυχία-γλωσσομάθειας/",
+      "content_type": "text/html",
+      "bytes": 7720,
+      "sha256": "99366cd1f281ed7277990a6943090b1f0d69accfdc8d6b1c19b96434d852b529"
+    },
+    "Τιμές/index.html": {
+      "url": "https://www.zairadafni.gr/Τιμές/",
+      "content_type": "text/html",
+      "bytes": 6648,
+      "sha256": "e1bf3fd2dd7fd2ed3d5a9ab596f9202a12add02787cf94c1c87415e24979aecb"
+    }
+  }
+}
