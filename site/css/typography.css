@@ -1,0 +1,114 @@
+/* Shared reading styles. Load last so legacy canvas sizes cannot clip text. */
+html, body, body .wb_sbg { min-width: 0; min-height: 0; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.6; }
+body .root { width: min(100%, 1100px); height: auto; min-height: 100vh; margin: 0 auto; }
+.root, .root * { box-sizing: border-box; }
+.root #wb_header,
+.root #wb_main,
+.root #wb_footer { width: 100%; height: auto !important; min-height: 0; padding: 32px; }
+.root .wb_container > .wb_element,
+.root .responsive-intro > .wb_element,
+.root .responsive-card > .wb_element {
+  position: relative !important; inset: auto !important;
+  width: 100% !important; min-width: 0 !important;
+  height: auto !important; min-height: 0 !important;
+}
+.root .wb-stl-heading1,
+.root .wb-stl-heading1 a { font-family: Arial, Helvetica, sans-serif; font-size: clamp(28px, 3vw, 36px); line-height: 1.25; }
+.root .wb-stl-heading2,
+.root .wb-stl-heading2 a { font-size: 24px; line-height: 1.3; }
+.root .wb-stl-heading3,
+.root .wb-stl-heading3 a { font-size: 22px; line-height: 1.35; }
+.root .wb-stl-pagetitle,
+.root .wb-stl-pagetitle a { font-size: 22px; line-height: 1.4; }
+.root .wb-stl-subtitle,
+.root .wb-stl-subtitle a { font-size: 18px; line-height: 1.5; }
+.root #wb_main p,
+.root #wb_main li,
+.root #wb_main .wb-stl-normal,
+.root #wb_main .wb-stl-normal a { font-size: 16px; line-height: 1.65; }
+.root #wb_main p { margin: 0 0 18px; }
+.root #wb_main ul, .root #wb_main ol { margin: 0 0 24px; padding-left: 24px; }
+.root #wb_main li + li { margin-top: 8px; }
+.root #wb_main :is(h1, h2, h3, h4, h5) { margin: 0 0 20px; text-align: left !important; }
+.root #wb_main :is(p, ul, ol) + :is(h1, h2, h3, h4, h5) { margin-top: 28px; }
+.root #wb_main .wb_element > :last-child { margin-bottom: 0; }
+.root :is(p, h1, h2, h3, h4, h5, li) { overflow-wrap: break-word; }
+.root .wb_element > img { display: block; max-width: 100%; width: auto !important; height: auto !important; margin: 0; }
+
+/* Branding and navigation grow with their content at every viewport size. */
+.root #wb_header { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px 24px; padding-bottom: 24px; }
+#wb_header > .wb_element:has(h1) { order: -3; }
+#wb_header > .wb_element:has(h3) { order: -2; }
+.root #wb_header .wb-stl-heading1 { font-size: clamp(28px, 3vw, 32px); line-height: 1.25; }
+.root #wb_header .wb-stl-heading3 { font-size: 18px; line-height: 1.5; white-space: nowrap; }
+.root #wb_header > .site-nav { order: -1; grid-column: 1 / -1; margin-top: 16px; padding: 8px 0; border-top: 1px solid #cbd3d6; border-bottom: 1px solid #cbd3d6; }
+.root .site-nav ul { float: none; height: auto; white-space: normal; }
+.root .site-nav li { margin: 0; }
+.root .site-nav li a { padding: 14px 12px; line-height: 1.4; }
+
+/* Course pages: a flowing sidebar beside the main reading column. */
+.root #wb_main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 36px; align-items: start; }
+.responsive-intro { display: block; min-width: 0; }
+.responsive-card { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.root .responsive-card :is(h2, h4, h5) { font-size: 23px; line-height: 1.35; margin-bottom: 0 !important; }
+.root .wb_button { width: 100% !important; height: auto !important; min-height: 60px; }
+.root .wb_button span { padding: 16px 12px !important; font-size: 19px; line-height: 1.4; }
+.root iframe { display: block; width: 100%; height: 340px; border: 0; }
+.root #wb_footer { display: block; margin-top: 16px; border-top: 1px solid #cbd3d6; padding-top: 24px; padding-bottom: 32px; }
+.root #wb_footer h5, .root #wb_footer h5 a { font-size: 16px; line-height: 1.8; }
+.root #wb_footer a { display: inline-block; padding: 4px 0; }
+
+/* The homepage keeps its photographs and yellow message, in flowing columns. */
+.root #wb_element_instance4, .root #wb_element_instance5,
+.root #wb_element_instance23 { display: none !important; }
+.root #wb_element_instance6 { padding: 28px; border-radius: 10px; background: #ffcc00; }
+.root #wb_element_instance6 .wb-stl-highlight { font-size: clamp(24px, 3vw, 30px); line-height: 1.35; }
+.root #wb_element_instance7 { aspect-ratio: 590 / 350; height: auto !important; }
+
+@media (min-width: 1024px) {
+  .root .site-nav.mobile-nav-ready > ul { display: flex; flex-wrap: wrap; justify-content: space-between; }
+  .root #wb_main:has(> .responsive-intro) { grid-template-columns: 250px minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 56px; }
+  #wb_main > .responsive-intro { grid-column: 2; grid-row: 1 / 3; }
+  #wb_main > .responsive-intro ~ .responsive-card { grid-column: 1; }
+  #wb_main > .responsive-intro + .responsive-card { grid-row: 1; }
+  #wb_main > .responsive-intro + .responsive-card + .responsive-card { grid-row: 2; }
+  .root #wb_header:has(.wb_gallery) { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); }
+  .root #wb_header:has(.wb_gallery) > .wb_element:has(h1) { grid-column: 1; }
+  .root #wb_header:has(.wb_gallery) > .wb_element:has(h3) { justify-self: end; width: auto !important; }
+  .root #wb_element_instance7 { grid-column: 1; grid-row: 3; }
+  .root #wb_element_instance6 { grid-column: 2; grid-row: 3; }
+  .root #wb_main:has(#wb_element_instance18) { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px 24px; }
+  #wb_main:has(#wb_element_instance18) > .responsive-card:nth-child(5) { display: grid; grid-column: 1 / -1; grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); gap: 20px 32px; }
+  #wb_main:has(#wb_element_instance18) > .responsive-card:nth-child(5) > :nth-child(2) { grid-column: 1; }
+  #wb_main:has(#wb_element_instance18) > .responsive-card:nth-child(5) > :last-child { grid-column: 2; grid-row: 1 / 3; }
+  .root #wb_main:has(#wb_element_instance137) { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; }
+  .root #wb_element_instance137 { grid-column: 2; grid-row: 1; }
+  .root #wb_element_instance138 { grid-column: 1; grid-row: 1; }
+  .root #wb_main:has(#wb_element_instance43) { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; }
+}
+@media (max-width: 1023px) {
+  .root #wb_header { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .root #wb_header > .site-nav { margin-top: 12px; }
+  .root #wb_main:has(.responsive-card) { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
+  #wb_main > .responsive-intro { grid-column: 1 / -1; }
+  .root #wb_header, .root #wb_main, .root #wb_footer { padding-left: 24px; padding-right: 24px; }
+}
+@media (max-width: 599px) {
+  .root #wb_header, .root #wb_main, .root #wb_footer { padding-left: 16px; padding-right: 16px; }
+  .root #wb_main:has(.responsive-card) { grid-template-columns: minmax(0, 1fr); }
+  .root #wb_header { padding-top: 24px; }
+  .root #wb_main { padding-top: 16px; }
+}
+
+/* Match each photograph to its flowing card width. */
+.root .responsive-card > .wb_element > img { width: 100% !important; }
+
+/* Keep the price catalogue's own heading and card spacing. */
+.root #wb_main .prices-intro h2 { text-align: center !important; margin: 0 0 14px; }
+.root #wb_main .price-card h3 { margin: 0; }
+.root #wb_main .prices-contact h3 { margin: 0 0 6px; }
+
+/* Keep each contact label with its link when the footer wraps. */
+.root #wb_footer h5 { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 24px; }
+.footer-contact-item { display: inline-flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 0 6px; }
