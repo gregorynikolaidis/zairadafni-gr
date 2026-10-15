@@ -72,14 +72,14 @@ WB_Gallery.prototype.renderSlideshow = function() {
 	var cont = $(
 		'<div class="gallery-slideshow">'+
 			'<div class="gallery-slide-image" style="overflow: hidden;"></div>'+
-			'<div class="gallery-slide-left"></div>'+
-			'<div class="gallery-slide-right"></div>'+
+			'<button type="button" class="gallery-slide-left" aria-label="Προηγούμενη φωτογραφία"></button>'+
+			'<button type="button" class="gallery-slide-right" aria-label="Επόμενη φωτογραφία"></button>'+
 		'</div>'
 	);
 	this.elem.html(cont);
 	this.listImgCont = cont.children("div").eq(0);
-	var larr = cont.children("div").eq(1);
-	var rarr = cont.children("div").eq(2);
+	var larr = cont.children(".gallery-slide-left");
+	var rarr = cont.children(".gallery-slide-right");
 	larr.css({left: "0", top: Math.floor((cont.innerHeight() - larr.height()) / 2) + "px"});
 	rarr.css({right: "0", top: Math.floor((cont.innerHeight() - larr.height()) / 2) + "px"});
 
