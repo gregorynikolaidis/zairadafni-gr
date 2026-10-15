@@ -1,0 +1,41 @@
+name: Prepare production release (deployment TODO)
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # On a tag push, checkout builds the tagged revision, not the latest main.
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/check.py
+      - name: Build and validate production files at the domain root
+        run: |
+          python3 scripts/build.py
+          python3 scripts/check.py --directory dist
+      - name: Save production files
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-site-${{ github.sha }}
+          path: dist/
+          if-no-files-found: error
+      - name: Report pending production deployment
+        run: |
+          echo '::warning::Production files are ready, but production deployment is not configured.'
+          cat >> "$GITHUB_STEP_SUMMARY" <<'SUMMARY'
+          ## Production deployment pending
+
+          This run built the tagged revision and saved its production files as an artifact.
+          **Nothing was deployed to the production domain.**
+
+          TODO: confirm the host, upload method, destination directory, and required secrets,
+          then add a production deployment job that uses this artifact.
+          SUMMARY

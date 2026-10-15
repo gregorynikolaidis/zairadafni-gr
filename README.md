@@ -49,7 +49,28 @@ Track work as issues in this repository and add those issues to the linked perso
 2. Create a branch such as `fix/contact-copy` or `feature/mobile-layout`.
 3. Make the change and run the link check. Read affected pages in the browser.
 4. Push the branch and open a pull request for the other person to review.
-5. Merge after review; keep deployment as a separate agreed step.
+5. Merge after review; GitHub Actions publishes `main` to the shared GitHub Pages preview once Pages is enabled.
+
+## Preview and production releases
+
+- **Pull requests and branch pushes:** `Check website` validates the source and both the domain-root and preview builds.
+- **Pushes to `main` (including merged PRs):** `Deploy preview to GitHub Pages` builds and publishes the shared preview. It can also be run manually from `main` in Actions.
+- **Tags beginning with `v`, such as `v1.0.0`:** `Prepare production release (deployment TODO)` builds the tagged revision at the domain root and uploads a downloadable artifact. It does not deploy to production yet; the run shows a warning and summary explaining the missing setup.
+
+To enable the preview, open repository **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**. Because this repository is private, the account needs a GitHub plan that supports Pages for private repositories. The preview is normally publicly accessible even though the repository is private.
+
+The expected preview URL is https://gregorynikolaidis.github.io/zairadafni-gr/. Keep the production domain out of this repository's Pages custom-domain setting: Pages is the shared preview, while production will use a separate deployment destination. Configure the `github-pages` environment to allow deployments from `main` only.
+
+The preview workflow reads its base path from GitHub Pages. To check the usual project path locally:
+
+```sh
+python3 scripts/build.py --base-path /zairadafni-gr/
+python3 scripts/check.py --directory dist --base-path /zairadafni-gr/
+```
+
+Builds recreate `dist/` and adjust HTML and CSS paths there; source files under `site/` keep their domain-root paths. The default `npm run build` still produces a domain-root production build.
+
+**Production TODO:** confirm the hosting provider, upload method (for example SFTP or a hosting API), destination directory, and required GitHub secrets. Then extend the tag workflow to deploy the artifact it already builds. Until that is configured, a successful tag run means the release files were prepared, not that production was updated.
 
 Kostas's GitHub account is pending. After he creates it, invite the exact username through repository **Settings → Collaborators** and project **Settings → Manage access**. Repository and project permissions are separate. Give project Write access for managing tasks. He must accept the invitation before the private resources are available. Do not share account passwords or tokens.
 

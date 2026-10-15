@@ -1,10 +1,18 @@
 """Validate local HTML, CSS, gallery links and required imported pages."""
+import argparse
 import re
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlsplit
 
-ROOT = Path(__file__).resolve().parents[1] / 'site'
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--directory', type=Path, default=Path(__file__).resolve().parents[1] / 'site')
+parser.add_argument('--base-path', default='/')
+args = parser.parse_args()
+ROOT = args.directory.resolve()
+BASE = args.base_path
+if not re.fullmatch(r'/(?:[A-Za-z0-9_-]+/)*', BASE):
+    parser.error('--base-path must start and end with / and contain path segments only')
 errors = []
 count = 0
 
@@ -16,7 +24,10 @@ def check(ref, base):
     url = urlsplit(urljoin(base, ref))
     if url.netloc != 'local':
         return
-    path = ROOT / unquote(url.path).lstrip('/')
+    if not url.path.startswith(BASE):
+        errors.append(f'{base}: reference escapes base path {BASE}: {ref}')
+        return
+    path = ROOT / unquote(url.path[len(BASE):])
     if url.path.endswith('/'):
         path /= 'index.html'
     count += 1
@@ -30,22 +41,22 @@ class Page(HTMLParser):
         if tag != 'base':
             for key in ('href', 'src'):
                 if key in attrs:
-                    check(attrs[key], 'https://local/')
+                    check(attrs[key], 'https://local' + BASE)
 
 
 pages = list(ROOT.rglob('*.html'))
 assert len(pages) == 12, f'Expected 11 sitemap pages and root, found {len(pages)}'
 for page in pages:
     text = page.read_text()
-    assert '<base href="/"' in text, str(page)
+    assert f'<base href="{BASE}"' in text, str(page)
     assert '<html lang="el">' in text, str(page)
     assert 'googletagmanager.com' not in text and 'statcounter.com' not in text
     Page().feed(text)
     for ref in re.findall(r'"(?:image|thumb)":"([^"]+)"', text):
-        check(ref.replace('\\/', '/'), 'https://local/')
+        check(ref.replace('\\/', '/'), 'https://local' + BASE)
 for css in ROOT.rglob('*.css'):
     for match in re.finditer(r'url\(\s*(?:[\"\']([^\"\']+)[\"\']|([^\s)]+))\s*\)', css.read_text()):
-        check(match.group(1) or match.group(2), 'https://local/' + str(css.relative_to(ROOT)))
+        check(match.group(1) or match.group(2), 'https://local' + BASE + css.relative_to(ROOT).as_posix())
 if errors:
     raise SystemExit('\n'.join(errors))
 print(f'Checked {len(pages)} HTML documents and {count} local references: OK')
