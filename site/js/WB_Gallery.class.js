@@ -80,7 +80,7 @@ WB_Gallery.prototype.renderSlideshow = function() {
 	this.imageIndex = 0;
 
 	function canAdvance() {
-		return count > 1 && !pointerDown && !document.hidden && !reducedMotion.matches &&
+		return count > 1 && !pointerDown && !document.hidden &&
 			!cont[0].querySelector(':focus-visible');
 	}
 
@@ -104,7 +104,7 @@ WB_Gallery.prototype.renderSlideshow = function() {
 	function goTo(index) {
 		if (!count) return;
 		index = (index + count) % count;
-		track[0].scrollTo({left: index * track[0].clientWidth, behavior: reducedMotion.matches ? 'auto' : 'smooth'});
+		track[0].scrollTo({left: index * track[0].clientWidth, behavior: reducedMotion.matches ? 'instant' : 'smooth'});
 		schedule();
 	}
 
@@ -129,7 +129,6 @@ WB_Gallery.prototype.renderSlideshow = function() {
 	$(window).on('resize', function() {
 		track[0].scrollTo({left: gallery.imageIndex * track[0].clientWidth, behavior: 'instant'});
 	});
-	reducedMotion.addEventListener('change', schedule);
 	update();
 	schedule();
 };
