@@ -79,11 +79,16 @@ WB_Gallery.prototype.renderSlideshow = function() {
 	this.elem.html(cont);
 	this.imageIndex = 0;
 
+	function canAdvance() {
+		return count > 1 && !pointerDown && !document.hidden &&
+			!cont[0].querySelector(':focus-visible');
+	}
+
 	function schedule() {
 		clearTimeout(gallery.slideshowTimer);
-		if (count < 2 || pointerDown || document.hidden || reducedMotion.matches || cont[0].contains(document.activeElement)) return;
+		if (!canAdvance()) return;
 		gallery.slideshowTimer = setTimeout(function() {
-			goTo(gallery.imageIndex + 1);
+			if (canAdvance()) goTo(gallery.imageIndex + 1);
 		}, gallery.slideshowInterval * 1000);
 	}
 
@@ -99,7 +104,7 @@ WB_Gallery.prototype.renderSlideshow = function() {
 	function goTo(index) {
 		if (!count) return;
 		index = (index + count) % count;
-		track[0].scrollTo({left: index * track[0].clientWidth, behavior: reducedMotion.matches ? 'auto' : 'smooth'});
+		track[0].scrollTo({left: index * track[0].clientWidth, behavior: reducedMotion.matches ? 'instant' : 'smooth'});
 		schedule();
 	}
 
@@ -118,13 +123,12 @@ WB_Gallery.prototype.renderSlideshow = function() {
 	track.on('scroll', function() { update(); schedule(); });
 	track.on('pointerdown', function() { pointerDown = true; clearTimeout(gallery.slideshowTimer); });
 	$(window).on('pointerup pointercancel', function() { pointerDown = false; schedule(); });
-	cont.on('focusin', function() { clearTimeout(gallery.slideshowTimer); });
+	cont.on('focusin', schedule);
 	cont.on('focusout', function() { setTimeout(schedule, 0); });
 	$(document).on('visibilitychange', schedule);
 	$(window).on('resize', function() {
 		track[0].scrollTo({left: gallery.imageIndex * track[0].clientWidth, behavior: 'instant'});
 	});
-	reducedMotion.addEventListener('change', schedule);
 	update();
 	schedule();
 };

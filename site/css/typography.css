@@ -95,9 +95,13 @@ body .root { width: min(100%, 1100px); height: auto; min-height: 100vh; margin: 
   .root #wb_header, .root #wb_main, .root #wb_footer { padding-left: 24px; padding-right: 24px; }
 }
 @media (max-width: 599px) {
-  .root #wb_header, .root #wb_main, .root #wb_footer { padding-left: 16px; padding-right: 16px; }
+  .root #wb_main, .root #wb_footer { padding-inline: 16px; }
+  .root #wb_header { --header-gutter: 16px; padding: 24px var(--header-gutter); }
+  .root #wb_header > .wb_gallery {
+    margin-inline: calc(-1 * var(--header-gutter));
+    width: calc(100% + 2 * var(--header-gutter)) !important;
+  }
   .root #wb_main:has(.responsive-card) { grid-template-columns: minmax(0, 1fr); }
-  .root #wb_header { padding-top: 24px; }
   .root #wb_main { padding-top: 16px; }
 }
 
